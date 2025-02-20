@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaria Detection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 500px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mb-4">Malaria Detection</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" name="file" accept="image/png, image/jpeg" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Upload and Predict</button>
+        </form>
+    </div>
+</body>
+</html>
